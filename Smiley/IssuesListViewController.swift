@@ -20,12 +20,14 @@ class IssueListViewController: UIViewController {
   
   let disposeBag = DisposeBag()
   let provider = RxMoyaProvider<GitHub>()
+  var issueTrackerModel: IssueTrackerModel!
   
   var latestRepositoryName: Observable<String> {
     return searchBar
       .rx.text
-      .throttle(0.5, scheduler: MainScheduler.instance)
+      .throttle(3, scheduler: MainScheduler.instance)
       .distinctUntilChanged()
+      .filter { $0.characters.count > 0 }
   }
   
   override func viewDidLoad() {
@@ -34,24 +36,30 @@ class IssueListViewController: UIViewController {
   }
   
   func setupRx() {
-    searchBar
-      .rx.text // Observable property thanks to RxCocoa
-      .throttle(2, scheduler: MainScheduler.instance) // Wait 0.5 for changes.
-      .distinctUntilChanged() // If they didn't occur, check if the new value is the same as old.
-      .filter { $0.characters.count > 0 } // If the new value is really new, filter for non-empty query.
-      .subscribeNext { [unowned self] (query) in // Here we subscribe to every new value, that is not empty (thanks to filter above).
-        self.findShit(name: query)
+    
+    // Now we will setup our model
+    issueTrackerModel = IssueTrackerModel(provider: provider, repositoryName: latestRepositoryName)
+    
+    // And bind issues to table view
+    // Here is where the magic happens, with only one binding
+    // we have filled up about 3 table view data source methods
+    issueTrackerModel
+      .trackIssues()
+      .bindTo(tableView.rx.items(cellIdentifier: "issueCell", cellType: UITableViewCell.self)) { (row, issue: Issue, cell) in
+        print(issue)
+        cell.textLabel?.text = issue.title
       }
-      .addDisposableTo(disposeBag) // Don't forget to add this to disposeBag to avoid retain cycle.
-  }
-  
-  func findShit(name: String) {
-    self.provider
-      .request(GitHub.Repo(fullName: name))
-      .mapObject(type: Repository.self)
-      .observeOn(MainScheduler.instance)
-      .subscribeNext { repository in
-        print(repository)
-      }.addDisposableTo(disposeBag)
+      .addDisposableTo(disposeBag)
+    
+    // Here we tell table view that if user clicks on a cell,
+    // and the keyboard is still visible, hide it
+    tableView
+      .rx.itemSelected
+      .subscribeNext { indexPath in
+        if self.searchBar.isFirstResponder == true {
+          self.view.endEditing(true)
+        }
+      }
+      .addDisposableTo(disposeBag)
   }
 }

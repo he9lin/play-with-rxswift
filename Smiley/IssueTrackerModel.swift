@@ -18,26 +18,30 @@ struct IssueTrackerModel {
   func trackIssues() -> Observable<[Issue]> {
     return repositoryName
       .observeOn(MainScheduler.instance)
-      .flatMapLatest { name -> Observable<Repository> in
+      .flatMapLatest { name -> Observable<Repository?> in
         print("Name: \(name)")
         return self.findRepository(name: name)
       }
-      .flatMapLatest { repository -> Observable<[Issue]> in
+      .flatMapLatest { repository -> Observable<[Issue]?> in
+        guard let repository = repository else { return Observable.just(nil) }
+        
         print("Repository: \(repository.fullName)")
         return self.findIssues(repository: repository)
       }
+      .replaceNilWith([])
   }
 
-  internal func findIssues(repository: Repository) -> Observable<[Issue]> {
+  internal func findIssues(repository: Repository) -> Observable<[Issue]?> {
     return self.provider
       .request(GitHub.Issues(repositoryFullName: repository.fullName))
-      .mapArray(type: Issue.self)
+      .debug()
+      .mapArrayOptional(type: Issue.self)
   }
 
-  internal func findRepository(name: String) -> Observable<Repository> {
+  internal func findRepository(name: String) -> Observable<Repository?> {
     return self.provider
       .request(GitHub.Repo(fullName: name))
-//      .debug()
-      .mapObject(type: Repository.self)
+      .debug()
+      .mapObjectOptional(type: Repository.self)
   }
 }

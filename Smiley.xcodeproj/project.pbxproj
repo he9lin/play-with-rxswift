@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD17CB2C1D959C5500E7053B /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD17CB2B1D959C5500E7053B /* OptionalType.swift */; };
+		FD17CB2E1D959C8F00E7053B /* Observable+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD17CB2D1D959C8F00E7053B /* Observable+Optional.swift */; };
+		FD17CB301D959CCD00E7053B /* RxOptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD17CB2F1D959CCD00E7053B /* RxOptionalError.swift */; };
 		FD44CE6A1D92FC6C00AC049A /* CitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD44CE691D92FC6C00AC049A /* CitySearchViewController.swift */; };
 		FD952EA01D94430A00E243C8 /* IssueTrackerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD952E9F1D94430A00E243C8 /* IssueTrackerModel.swift */; };
 		FD952EA61D945F8600E243C8 /* GithubEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD952EA51D945F8600E243C8 /* GithubEndpoint.swift */; };
@@ -61,6 +64,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD17CB2B1D959C5500E7053B /* OptionalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalType.swift; sourceTree = "<group>"; };
+		FD17CB2D1D959C8F00E7053B /* Observable+Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Optional.swift"; sourceTree = "<group>"; };
+		FD17CB2F1D959CCD00E7053B /* RxOptionalError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxOptionalError.swift; sourceTree = "<group>"; };
 		FD44CE691D92FC6C00AC049A /* CitySearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitySearchViewController.swift; sourceTree = "<group>"; };
 		FD952E9F1D94430A00E243C8 /* IssueTrackerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueTrackerModel.swift; sourceTree = "<group>"; };
 		FD952EA51D945F8600E243C8 /* GithubEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEndpoint.swift; sourceTree = "<group>"; };
@@ -142,6 +148,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD17CB2A1D959C4600E7053B /* RxOptional */ = {
+			isa = PBXGroup;
+			children = (
+				FD17CB2B1D959C5500E7053B /* OptionalType.swift */,
+				FD17CB2D1D959C8F00E7053B /* Observable+Optional.swift */,
+				FD17CB2F1D959CCD00E7053B /* RxOptionalError.swift */,
+			);
+			name = RxOptional;
+			sourceTree = "<group>";
+		};
 		FD952EBB1D9478D100E243C8 /* GithubIssues */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +247,7 @@
 		FDF5DAF21D91D27C00DBA697 /* Smiley */ = {
 			isa = PBXGroup;
 			children = (
+				FD17CB2A1D959C4600E7053B /* RxOptional */,
 				FD952F031D94C53100E243C8 /* RxMoyaArgo */,
 				FD952EBD1D9478F600E243C8 /* CitySearch */,
 				FD952EBC1D9478E000E243C8 /* Circle */,
@@ -435,11 +452,14 @@
 				FD952EA61D945F8600E243C8 /* GithubEndpoint.swift in Sources */,
 				FD952F001D94C32300E243C8 /* Observable+Moya.swift in Sources */,
 				FD952EA81D946A0C00E243C8 /* IssuesListViewController.swift in Sources */,
+				FD17CB301D959CCD00E7053B /* RxOptionalError.swift in Sources */,
+				FD17CB2C1D959C5500E7053B /* OptionalType.swift in Sources */,
 				FD952EC21D94829F00E243C8 /* Repository.swift in Sources */,
 				FDF5DAF61D91D27C00DBA697 /* ViewController.swift in Sources */,
 				FD952F061D94C5B900E243C8 /* Observable+Argo.swift in Sources */,
 				FD952EA01D94430A00E243C8 /* IssueTrackerModel.swift in Sources */,
 				FDDAB1201D93228700183B59 /* CircleViewModel.swift in Sources */,
+				FD17CB2E1D959C8F00E7053B /* Observable+Optional.swift in Sources */,
 				FD952F021D94C3B100E243C8 /* Moya+RxSwift.swift in Sources */,
 				FDF5DAF41D91D27C00DBA697 /* AppDelegate.swift in Sources */,
 				FD952EE11D94A26100E243C8 /* Issue.swift in Sources */,

@@ -47,6 +47,21 @@ public extension ObservableType where E == Moya.Response {
     }
   }
   
+  public func mapObjectOptional<T: Decodable>(type: T.Type, rootKey: String? = nil) -> Observable<T?> where T == T.DecodedType {
+    
+    return observeOn(SerialDispatchQueueScheduler(globalConcurrentQueueQOS: .background))
+      .flatMap { response -> Observable<T?> in
+        do {
+          let object: T = try response.mapObject(rootKey: rootKey)
+          return Observable.just(object)
+        } catch {
+          return Observable.just(nil)
+        }
+        
+      }
+      .observeOn(MainScheduler.instance)
+  }
+  
   /// Alternative for mapping object without specifying type as argument
   /// This means type needs to be specified at use
   public func mapObject<T: Decodable>(rootKey: String? = nil) -> Observable<T> where T == T.DecodedType {
@@ -88,6 +103,19 @@ public extension ObservableType where E == Moya.Response {
         }
       }
     }
+  }
+  
+  public func mapArrayOptional<T: Decodable>(type: T.Type, rootKey: String? = nil) -> Observable<[T]?> where T == T.DecodedType {
+    return observeOn(SerialDispatchQueueScheduler(globalConcurrentQueueQOS: .background))
+      .flatMap { response -> Observable<[T]?> in
+        do {
+          let object: [T] = try response.mapArray(rootKey: rootKey)
+          return Observable.just(object)
+        } catch {
+          return Observable.just(nil)
+        }
+      }
+      .observeOn(MainScheduler.instance)
   }
   
   /// Alternative for mapping object array without specifying type as argument
