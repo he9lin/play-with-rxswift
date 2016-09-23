@@ -1,25 +1,129 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fUW-e6-GTN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Smiley" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-727" y="541"/>
+        </scene>
+        <!--CitySearchViewController-->
+        <scene sceneID="mmy-ki-LYK">
+            <objects>
+                <viewController id="TCT-BW-yAl" userLabel="CitySearchViewController" customClass="CitySearchController" customModule="Smiley" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aGf-3R-BN8"/>
+                        <viewControllerLayoutGuide type="bottom" id="HvS-o5-A2O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ji4-hO-3b3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Type a city name" translatesAutoresizingMaskIntoConstraints="NO" id="dRS-K2-uhw">
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Snn-31-0Kp">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="citySearchCell" id="5SB-3w-g2T">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5SB-3w-g2T" id="sFz-TN-B15">
+                                            <frame key="frameInset" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Snn-31-0Kp" firstAttribute="leading" secondItem="Ji4-hO-3b3" secondAttribute="leading" id="1BC-3A-7zN"/>
+                            <constraint firstAttribute="trailing" secondItem="Snn-31-0Kp" secondAttribute="trailing" id="62S-gB-LfR"/>
+                            <constraint firstItem="HvS-o5-A2O" firstAttribute="top" secondItem="Snn-31-0Kp" secondAttribute="bottom" id="FAv-hd-4Mn"/>
+                            <constraint firstItem="dRS-K2-uhw" firstAttribute="top" secondItem="aGf-3R-BN8" secondAttribute="bottom" id="GPn-AM-3C8"/>
+                            <constraint firstItem="Snn-31-0Kp" firstAttribute="top" secondItem="dRS-K2-uhw" secondAttribute="bottom" id="HWq-QV-vxD"/>
+                            <constraint firstItem="dRS-K2-uhw" firstAttribute="leading" secondItem="Snn-31-0Kp" secondAttribute="leading" id="QY4-wc-sUZ"/>
+                            <constraint firstItem="dRS-K2-uhw" firstAttribute="trailing" secondItem="Snn-31-0Kp" secondAttribute="trailing" id="ZYk-gy-B8X"/>
+                            <constraint firstItem="Snn-31-0Kp" firstAttribute="leading" secondItem="Ji4-hO-3b3" secondAttribute="leading" id="db0-Fp-KQL"/>
+                            <constraint firstItem="HvS-o5-A2O" firstAttribute="top" secondItem="Snn-31-0Kp" secondAttribute="bottom" id="fTx-iT-YiZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Snn-31-0Kp" secondAttribute="trailing" id="kxw-2d-Ofr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="dRS-K2-uhw" id="xpR-WI-MUx"/>
+                        <outlet property="tableView" destination="Snn-31-0Kp" id="f1b-PN-oJc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AST-7Z-p7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="784.85757121439292"/>
+        </scene>
+        <!--Issues List-->
+        <scene sceneID="FI0-uZ-2pW">
+            <objects>
+                <viewController id="fUW-e6-GTN" userLabel="Issues List" customClass="IssueListViewController" customModule="Smiley" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qwz-da-gfw"/>
+                        <viewControllerLayoutGuide type="bottom" id="anF-eQ-5rc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="seU-0s-LYc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="F8o-Sk-BwV">
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eDb-A2-tJc">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="issueCell" id="iWc-mu-mQa">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iWc-mu-mQa" id="ldZ-Pu-d2y">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eDb-A2-tJc" secondAttribute="trailing" id="0Ha-TG-rCT"/>
+                            <constraint firstItem="eDb-A2-tJc" firstAttribute="top" secondItem="F8o-Sk-BwV" secondAttribute="bottom" id="0hD-WG-mho"/>
+                            <constraint firstItem="anF-eQ-5rc" firstAttribute="top" secondItem="eDb-A2-tJc" secondAttribute="bottom" id="AVU-hb-v2I"/>
+                            <constraint firstItem="eDb-A2-tJc" firstAttribute="leading" secondItem="seU-0s-LYc" secondAttribute="leading" id="IZq-mI-SVz"/>
+                            <constraint firstAttribute="trailing" secondItem="F8o-Sk-BwV" secondAttribute="trailing" id="Lao-k5-iEc"/>
+                            <constraint firstItem="F8o-Sk-BwV" firstAttribute="top" secondItem="qwz-da-gfw" secondAttribute="bottom" id="n1o-kn-mam"/>
+                            <constraint firstItem="F8o-Sk-BwV" firstAttribute="leading" secondItem="seU-0s-LYc" secondAttribute="leading" id="qk1-EU-80H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="F8o-Sk-BwV" id="ovg-gE-TBp"/>
+                        <outlet property="tableView" destination="eDb-A2-tJc" id="rXM-Xf-UoD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tf9-NA-TTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873" y="408"/>
         </scene>
     </scenes>
 </document>

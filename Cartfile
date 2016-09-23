@@ -1,0 +1,7 @@
+github "ReactiveX/RxSwift" "3.0.0-beta.1"
+github "Alamofire/Alamofire" ~> 4.0.0
+github "joeldev/JLRoutes" ~> 1.6.2
+github "ViccAlexander/Chameleon" ~> 2.2.0
+github "Moya/Moya" "8.0.0-beta.2"
+github "thoughtbot/Argo" "master"
+github "thoughtbot/Curry" "master"

@@ -3,10 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD44CE6A1D92FC6C00AC049A /* CitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD44CE691D92FC6C00AC049A /* CitySearchViewController.swift */; };
+		FD952EA01D94430A00E243C8 /* IssueTrackerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD952E9F1D94430A00E243C8 /* IssueTrackerModel.swift */; };
+		FD952EA61D945F8600E243C8 /* GithubEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD952EA51D945F8600E243C8 /* GithubEndpoint.swift */; };
+		FD952EA81D946A0C00E243C8 /* IssuesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD952EA71D946A0C00E243C8 /* IssuesListViewController.swift */; };
+		FD952EC21D94829F00E243C8 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD952EC11D94829F00E243C8 /* Repository.swift */; };
+		FD952ED01D949F8300E243C8 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD952EC81D949F8300E243C8 /* Argo.framework */; };
+		FD952ED11D949F8300E243C8 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD952EC91D949F8300E243C8 /* Chameleon.framework */; };
+		FD952ED21D949F8300E243C8 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD952ECA1D949F8300E243C8 /* Curry.framework */; };
+		FD952ED31D949F8300E243C8 /* JLRoutes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD952ECB1D949F8300E243C8 /* JLRoutes.framework */; };
+		FD952ED41D949F8300E243C8 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD952ECC1D949F8300E243C8 /* Runes.framework */; };
+		FD952ED51D949F8300E243C8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD952ECD1D949F8300E243C8 /* RxCocoa.framework */; };
+		FD952ED61D949F8300E243C8 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD952ECE1D949F8300E243C8 /* RxMoya.framework */; };
+		FD952ED71D949F8300E243C8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD952ECF1D949F8300E243C8 /* RxSwift.framework */; };
+		FD952EE11D94A26100E243C8 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD952EE01D94A26000E243C8 /* Issue.swift */; };
+		FD952EE61D94B16C00E243C8 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD952EE51D94B16C00E243C8 /* Moya.framework */; };
+		FD952EEB1D94B1A300E243C8 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD952EEA1D94B1A300E243C8 /* Result.framework */; };
+		FD952EEE1D94B1CB00E243C8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD952EED1D94B1CB00E243C8 /* Alamofire.framework */; };
+		FD952EF41D94B20200E243C8 /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD952EF01D94B20200E243C8 /* ReactiveMoya.framework */; };
+		FD952EF51D94B20200E243C8 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD952EF11D94B20200E243C8 /* ReactiveSwift.framework */; };
+		FD952EF61D94B20200E243C8 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD952EF21D94B20200E243C8 /* RxBlocking.framework */; };
+		FD952EFE1D94BE9200E243C8 /* Response+Argo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD952EFD1D94BE9200E243C8 /* Response+Argo.swift */; };
+		FD952F001D94C32300E243C8 /* Observable+Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD952EFF1D94C32300E243C8 /* Observable+Moya.swift */; };
+		FD952F021D94C3B100E243C8 /* Moya+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD952F011D94C3B100E243C8 /* Moya+RxSwift.swift */; };
+		FD952F061D94C5B900E243C8 /* Observable+Argo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD952F051D94C5B900E243C8 /* Observable+Argo.swift */; };
+		FDDAB1201D93228700183B59 /* CircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDAB11F1D93228700183B59 /* CircleViewModel.swift */; };
 		FDF5DAF41D91D27C00DBA697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DAF31D91D27C00DBA697 /* AppDelegate.swift */; };
 		FDF5DAF61D91D27C00DBA697 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DAF51D91D27C00DBA697 /* ViewController.swift */; };
 		FDF5DAF91D91D27C00DBA697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DAF71D91D27C00DBA697 /* Main.storyboard */; };
@@ -14,6 +39,8 @@
 		FDF5DAFE1D91D27C00DBA697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DAFC1D91D27C00DBA697 /* LaunchScreen.storyboard */; };
 		FDF5DB091D91D27C00DBA697 /* SmileyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DB081D91D27C00DBA697 /* SmileyTests.swift */; };
 		FDF5DB141D91D27C00DBA697 /* SmileyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DB131D91D27C00DBA697 /* SmileyUITests.swift */; };
+		FDF5DB221D91DAA000DBA697 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DB211D91DAA000DBA697 /* Cartfile */; };
+		FDF5DB231D91DAA000DBA697 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DB211D91DAA000DBA697 /* Cartfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +61,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD44CE691D92FC6C00AC049A /* CitySearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitySearchViewController.swift; sourceTree = "<group>"; };
+		FD952E9F1D94430A00E243C8 /* IssueTrackerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueTrackerModel.swift; sourceTree = "<group>"; };
+		FD952EA51D945F8600E243C8 /* GithubEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEndpoint.swift; sourceTree = "<group>"; };
+		FD952EA71D946A0C00E243C8 /* IssuesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesListViewController.swift; sourceTree = "<group>"; };
+		FD952EC11D94829F00E243C8 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		FD952EC81D949F8300E243C8 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
+		FD952EC91D949F8300E243C8 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
+		FD952ECA1D949F8300E243C8 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
+		FD952ECB1D949F8300E243C8 /* JLRoutes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JLRoutes.framework; path = Carthage/Build/iOS/JLRoutes.framework; sourceTree = "<group>"; };
+		FD952ECC1D949F8300E243C8 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/iOS/Runes.framework; sourceTree = "<group>"; };
+		FD952ECD1D949F8300E243C8 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		FD952ECE1D949F8300E243C8 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
+		FD952ECF1D949F8300E243C8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		FD952EE01D94A26000E243C8 /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		FD952EE51D94B16C00E243C8 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		FD952EEA1D94B1A300E243C8 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		FD952EED1D94B1CB00E243C8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		FD952EF01D94B20200E243C8 /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
+		FD952EF11D94B20200E243C8 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		FD952EF21D94B20200E243C8 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		FD952EF31D94B20200E243C8 /* RxTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTests.framework; path = Carthage/Build/iOS/RxTests.framework; sourceTree = "<group>"; };
+		FD952EFD1D94BE9200E243C8 /* Response+Argo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+Argo.swift"; sourceTree = "<group>"; };
+		FD952EFF1D94C32300E243C8 /* Observable+Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Moya.swift"; sourceTree = "<group>"; };
+		FD952F011D94C3B100E243C8 /* Moya+RxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Moya+RxSwift.swift"; sourceTree = "<group>"; };
+		FD952F051D94C5B900E243C8 /* Observable+Argo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Argo.swift"; sourceTree = "<group>"; };
+		FDDAB11F1D93228700183B59 /* CircleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewModel.swift; sourceTree = "<group>"; };
 		FDF5DAF01D91D27C00DBA697 /* Smiley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smiley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF5DAF31D91D27C00DBA697 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF5DAF51D91D27C00DBA697 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +100,7 @@
 		FDF5DB0F1D91D27C00DBA697 /* SmileyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF5DB131D91D27C00DBA697 /* SmileyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileyUITests.swift; sourceTree = "<group>"; };
 		FDF5DB151D91D27C00DBA697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF5DB211D91DAA000DBA697 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +108,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD952EF41D94B20200E243C8 /* ReactiveMoya.framework in Frameworks */,
+				FD952EF51D94B20200E243C8 /* ReactiveSwift.framework in Frameworks */,
+				FD952EF61D94B20200E243C8 /* RxBlocking.framework in Frameworks */,
+				FD952EEE1D94B1CB00E243C8 /* Alamofire.framework in Frameworks */,
+				FD952ED01D949F8300E243C8 /* Argo.framework in Frameworks */,
+				FD952ED11D949F8300E243C8 /* Chameleon.framework in Frameworks */,
+				FD952ED21D949F8300E243C8 /* Curry.framework in Frameworks */,
+				FD952ED31D949F8300E243C8 /* JLRoutes.framework in Frameworks */,
+				FD952EE61D94B16C00E243C8 /* Moya.framework in Frameworks */,
+				FD952EEB1D94B1A300E243C8 /* Result.framework in Frameworks */,
+				FD952ED41D949F8300E243C8 /* Runes.framework in Frameworks */,
+				FD952ED51D949F8300E243C8 /* RxCocoa.framework in Frameworks */,
+				FD952ED61D949F8300E243C8 /* RxMoya.framework in Frameworks */,
+				FD952ED71D949F8300E243C8 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,15 +142,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD952EBB1D9478D100E243C8 /* GithubIssues */ = {
+			isa = PBXGroup;
+			children = (
+				FD952E9F1D94430A00E243C8 /* IssueTrackerModel.swift */,
+				FD952EA51D945F8600E243C8 /* GithubEndpoint.swift */,
+				FD952EA71D946A0C00E243C8 /* IssuesListViewController.swift */,
+				FD952EC11D94829F00E243C8 /* Repository.swift */,
+				FD952EE01D94A26000E243C8 /* Issue.swift */,
+			);
+			name = GithubIssues;
+			sourceTree = "<group>";
+		};
+		FD952EBC1D9478E000E243C8 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				FDF5DAF51D91D27C00DBA697 /* ViewController.swift */,
+				FDDAB11F1D93228700183B59 /* CircleViewModel.swift */,
+			);
+			name = Circle;
+			sourceTree = "<group>";
+		};
+		FD952EBD1D9478F600E243C8 /* CitySearch */ = {
+			isa = PBXGroup;
+			children = (
+				FD44CE691D92FC6C00AC049A /* CitySearchViewController.swift */,
+			);
+			name = CitySearch;
+			sourceTree = "<group>";
+		};
+		FD952F031D94C53100E243C8 /* RxMoyaArgo */ = {
+			isa = PBXGroup;
+			children = (
+				FD952EFD1D94BE9200E243C8 /* Response+Argo.swift */,
+				FD952EFF1D94C32300E243C8 /* Observable+Moya.swift */,
+				FD952F011D94C3B100E243C8 /* Moya+RxSwift.swift */,
+				FD952F051D94C5B900E243C8 /* Observable+Argo.swift */,
+			);
+			name = RxMoyaArgo;
+			sourceTree = "<group>";
+		};
+		FDEBA0CF1D923D7D00F85329 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD952EF01D94B20200E243C8 /* ReactiveMoya.framework */,
+				FD952EF11D94B20200E243C8 /* ReactiveSwift.framework */,
+				FD952EF21D94B20200E243C8 /* RxBlocking.framework */,
+				FD952EF31D94B20200E243C8 /* RxTests.framework */,
+				FD952EED1D94B1CB00E243C8 /* Alamofire.framework */,
+				FD952EEA1D94B1A300E243C8 /* Result.framework */,
+				FD952EE51D94B16C00E243C8 /* Moya.framework */,
+				FD952EC81D949F8300E243C8 /* Argo.framework */,
+				FD952EC91D949F8300E243C8 /* Chameleon.framework */,
+				FD952ECA1D949F8300E243C8 /* Curry.framework */,
+				FD952ECB1D949F8300E243C8 /* JLRoutes.framework */,
+				FD952ECC1D949F8300E243C8 /* Runes.framework */,
+				FD952ECD1D949F8300E243C8 /* RxCocoa.framework */,
+				FD952ECE1D949F8300E243C8 /* RxMoya.framework */,
+				FD952ECF1D949F8300E243C8 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FDF5DAE71D91D27C00DBA697 = {
 			isa = PBXGroup;
 			children = (
+				FDF5DB211D91DAA000DBA697 /* Cartfile */,
 				FDF5DAF21D91D27C00DBA697 /* Smiley */,
 				FDF5DB071D91D27C00DBA697 /* SmileyTests */,
 				FDF5DB121D91D27C00DBA697 /* SmileyUITests */,
 				FDF5DAF11D91D27C00DBA697 /* Products */,
+				FDEBA0CF1D923D7D00F85329 /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		FDF5DAF11D91D27C00DBA697 /* Products */ = {
 			isa = PBXGroup;
@@ -97,8 +231,11 @@
 		FDF5DAF21D91D27C00DBA697 /* Smiley */ = {
 			isa = PBXGroup;
 			children = (
+				FD952F031D94C53100E243C8 /* RxMoyaArgo */,
+				FD952EBD1D9478F600E243C8 /* CitySearch */,
+				FD952EBC1D9478E000E243C8 /* Circle */,
+				FD952EBB1D9478D100E243C8 /* GithubIssues */,
 				FDF5DAF31D91D27C00DBA697 /* AppDelegate.swift */,
-				FDF5DAF51D91D27C00DBA697 /* ViewController.swift */,
 				FDF5DAF71D91D27C00DBA697 /* Main.storyboard */,
 				FDF5DAFA1D91D27C00DBA697 /* Assets.xcassets */,
 				FDF5DAFC1D91D27C00DBA697 /* LaunchScreen.storyboard */,
@@ -135,6 +272,7 @@
 				FDF5DAEC1D91D27C00DBA697 /* Sources */,
 				FDF5DAED1D91D27C00DBA697 /* Frameworks */,
 				FDF5DAEE1D91D27C00DBA697 /* Resources */,
+				FD952EFC1D94B25A00E243C8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -188,24 +326,28 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = heroxtech;
 				TargetAttributes = {
 					FDF5DAEF1D91D27C00DBA697 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					FDF5DB031D91D27C00DBA697 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = FDF5DAEF1D91D27C00DBA697;
 					};
 					FDF5DB0E1D91D27C00DBA697 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = FDF5DAEF1D91D27C00DBA697;
 					};
 				};
 			};
 			buildConfigurationList = FDF5DAEB1D91D27C00DBA697 /* Build configuration list for PBXProject "Smiley" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -231,6 +373,7 @@
 			files = (
 				FDF5DAFE1D91D27C00DBA697 /* LaunchScreen.storyboard in Resources */,
 				FDF5DAFB1D91D27C00DBA697 /* Assets.xcassets in Resources */,
+				FDF5DB221D91DAA000DBA697 /* Cartfile in Resources */,
 				FDF5DAF91D91D27C00DBA697 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDF5DB231D91DAA000DBA697 /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +395,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FD952EFC1D94B25A00E243C8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Chameleon.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Curry.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/JLRoutes.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Runes.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Argo.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FDF5DAEC1D91D27C00DBA697 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD44CE6A1D92FC6C00AC049A /* CitySearchViewController.swift in Sources */,
+				FD952EFE1D94BE9200E243C8 /* Response+Argo.swift in Sources */,
+				FD952EA61D945F8600E243C8 /* GithubEndpoint.swift in Sources */,
+				FD952F001D94C32300E243C8 /* Observable+Moya.swift in Sources */,
+				FD952EA81D946A0C00E243C8 /* IssuesListViewController.swift in Sources */,
+				FD952EC21D94829F00E243C8 /* Repository.swift in Sources */,
 				FDF5DAF61D91D27C00DBA697 /* ViewController.swift in Sources */,
+				FD952F061D94C5B900E243C8 /* Observable+Argo.swift in Sources */,
+				FD952EA01D94430A00E243C8 /* IssueTrackerModel.swift in Sources */,
+				FDDAB1201D93228700183B59 /* CircleViewModel.swift in Sources */,
+				FD952F021D94C3B100E243C8 /* Moya+RxSwift.swift in Sources */,
 				FDF5DAF41D91D27C00DBA697 /* AppDelegate.swift in Sources */,
+				FD952EE11D94A26100E243C8 /* Issue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +511,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -372,8 +559,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -392,6 +581,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -401,10 +591,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6HYGVWN7JH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					s/,
+				);
 				INFOPLIST_FILE = Smiley/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks /Applications/Xcode.app/Contents/Developer/Library/Frameworks/";
 				PRODUCT_BUNDLE_IDENTIFIER = heroxtech.Smiley;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -412,10 +611,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6HYGVWN7JH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					s/,
+				);
 				INFOPLIST_FILE = Smiley/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks /Applications/Xcode.app/Contents/Developer/Library/Frameworks/";
 				PRODUCT_BUNDLE_IDENTIFIER = heroxtech.Smiley;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -427,6 +635,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = heroxtech.SmileyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smiley.app/Smiley";
 			};
 			name = Debug;
@@ -439,6 +648,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = heroxtech.SmileyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smiley.app/Smiley";
 			};
 			name = Release;
@@ -450,6 +660,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = heroxtech.SmileyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Smiley;
 			};
 			name = Debug;
@@ -461,6 +672,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = heroxtech.SmileyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Smiley;
 			};
 			name = Release;
@@ -484,6 +696,7 @@
 				FDF5DB1A1D91D27C00DBA697 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDF5DB1B1D91D27C00DBA697 /* Build configuration list for PBXNativeTarget "SmileyTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +705,7 @@
 				FDF5DB1D1D91D27C00DBA697 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDF5DB1E1D91D27C00DBA697 /* Build configuration list for PBXNativeTarget "SmileyUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +714,7 @@
 				FDF5DB201D91D27C00DBA697 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
