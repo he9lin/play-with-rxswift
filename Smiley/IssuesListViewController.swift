@@ -25,7 +25,7 @@ class IssueListViewController: UIViewController {
   var latestRepositoryName: Observable<String> {
     return searchBar
       .rx.text
-      .throttle(3, scheduler: MainScheduler.instance)
+      .throttle(1, scheduler: MainScheduler.instance)
       .distinctUntilChanged()
       .filter { $0.characters.count > 0 }
   }
@@ -36,15 +36,15 @@ class IssueListViewController: UIViewController {
   }
   
   func setupRx() {
-    
     // Now we will setup our model
     issueTrackerModel = IssueTrackerModel(provider: provider, repositoryName: latestRepositoryName)
     
     // And bind issues to table view
     // Here is where the magic happens, with only one binding
     // we have filled up about 3 table view data source methods
-    issueTrackerModel
-      .trackIssues()
+    let issues = issueTrackerModel.trackIssues()
+      
+    issues
       .bindTo(tableView.rx.items(cellIdentifier: "issueCell", cellType: UITableViewCell.self)) { (row, issue: Issue, cell) in
         print(issue)
         cell.textLabel?.text = issue.title

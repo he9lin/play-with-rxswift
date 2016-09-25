@@ -109,6 +109,7 @@ public extension ObservableType where E == Moya.Response {
     return observeOn(SerialDispatchQueueScheduler(globalConcurrentQueueQOS: .background))
       .flatMap { response -> Observable<[T]?> in
         do {
+          print(response.data)
           let object: [T] = try response.mapArray(rootKey: rootKey)
           return Observable.just(object)
         } catch {
@@ -132,7 +133,6 @@ public extension ObservableType where E == Moya.Response {
 }
 
 private extension AnyObserver {
-  
   /// convenience method calling either on(.Next) or on(.Error) depending if a function throws an error or returns a value
   private func onNextOrError(function: () throws -> Element) {
     do {

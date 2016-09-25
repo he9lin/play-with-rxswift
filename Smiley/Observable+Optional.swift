@@ -51,6 +51,7 @@ public extension ObservableType where E: OptionalType {
   
   public func replaceNilWith(_ valueOnNil: E.Wrapped) -> Observable<E.Wrapped> {
     return self.map { element -> E.Wrapped in
+      print("replaceNilWith: \(element.value)")
       guard let value = element.value else {
         return valueOnNil
       }

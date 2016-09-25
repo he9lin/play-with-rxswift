@@ -12,7 +12,7 @@ import Runes
 
 struct Issue {
   let id: Int
-  let number: String
+  let number: Int
   let title: String
   let body: String
 }

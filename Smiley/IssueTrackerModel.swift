@@ -19,13 +19,10 @@ struct IssueTrackerModel {
     return repositoryName
       .observeOn(MainScheduler.instance)
       .flatMapLatest { name -> Observable<Repository?> in
-        print("Name: \(name)")
         return self.findRepository(name: name)
       }
       .flatMapLatest { repository -> Observable<[Issue]?> in
         guard let repository = repository else { return Observable.just(nil) }
-        
-        print("Repository: \(repository.fullName)")
         return self.findIssues(repository: repository)
       }
       .replaceNilWith([])
